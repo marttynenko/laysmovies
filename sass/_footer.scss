@@ -1,0 +1,66 @@
+footer.footer {
+  background: $dark;
+}
+.footer-flex {
+  min-height: 140px;
+  padding: 0px 15px;
+}
+.subscribe-form {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+
+  input#{&}-input {
+    width: 100%;
+    padding-right: 275px;
+    font-weight: 700;
+  }
+  button#{&}-btn {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 54px;
+    line-height: 54px;
+    font-weight: 700;
+    border: 0;
+    padding: 0px 20px;
+    background: $yellow;
+    color: #000;
+    min-width: 250px;
+    cursor: pointer;
+    transition: background .3s;
+
+    &:hover {
+      background: $primary;
+    }
+  }
+}
+.media-links {
+  font-size: 0;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+
+    i {
+      display: block;
+      margin: 0;
+    }
+    &:hover {
+      opacity: .75;
+    }
+  }
+}
+.i-insta {
+  @include sprite($insta);
+}
+.i-fb {
+  @include sprite($fb);
+}
+.i-vk {
+  @include sprite($vk);
+}

@@ -1,0 +1,33 @@
+header.header {
+	position: absolute;
+	z-index: 9;
+	left: 0;
+	right: 0;
+	//top: 6.5vh;
+	top: 55px;
+}
+.header-home {
+	display: inline-block;
+	vertical-align: middle;
+	width: 62px;
+	height: 62px;
+	background: $yellow;
+	border-radius: 6px;
+	position: relative;
+	border: 1px solid rgba(#FFF, .45);
+
+	&:hover {
+		background: $primary;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		@include sprite($i-home);
+	}
+}

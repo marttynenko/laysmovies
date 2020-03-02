@@ -1,0 +1,251 @@
+.wrapper {
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 100%;
+}
+.layout {
+	min-height: 100%;
+
+	&-aside {
+		width: 20%;
+		min-width: 300px;
+		background: $primary url(../images/right-col-bg.png) right top no-repeat;
+		padding-top: 6.5vh;
+		padding-right: 80px;
+	}
+	&-main {
+		width: 80%;
+		overflow: hidden;
+	}
+}
+.aside-img {
+	position: relative;
+	margin-left: -30%;
+
+	img {
+		max-height: 75vh;
+		min-height: 500px;
+	}
+}
+.main-screen-col {
+	height: calc(100vh - 140px - 230px);
+	min-height: 420px;
+	position: relative;
+
+	.aside-img img {
+		max-height: calc(93.5vh - 340px);
+		min-height: 0;
+	}
+}
+.main-screen-img {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+	min-height: 100%;
+}
+.screen-col {
+	.aside-img {
+		padding-top: 8vh;
+	}
+}
+
+.purposes {
+	background: #FFF;
+	padding: 10px 0px 10px;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -20px;
+		height: 20px;
+		background: url(../images/polygon-tight.png) repeat-x;
+	}
+
+	.row {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	[class*="flx-"] {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+.purpose {
+	display: block;
+	background: $blue;
+	height: 210px;
+	padding: 20px 15px 0px;
+	text-align: center;
+	font-weight: 700;
+	@include fz(35);
+	line-height: 1.2;
+	-webkit-mask-image: url(../images/polygon.png);
+	-webkit-mask-size: 100% 100%;
+	-moz-mask-image: url(../images/polygon.png);
+	-moz-mask-size: 100% 100%;
+	-ms-mask-image: url(../images/polygon.png);
+	-ms-mask-size: 100% 100%;
+	mask-image: url(../images/polygon.png);
+	mask-size: 100% 100%;
+	overflow: hidden;
+
+	&-inner {
+		max-width: 395px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.megogo {
+		-webkit-mask-image: url(../images/polygon-megogo.png);
+		-webkit-mask-size: 100% 100%;
+		-moz-mask-image: url(../images/polygon-megogo.png);
+		-moz-mask-size: 100% 100%;
+		-ms-mask-image: url(../images/polygon-megogo.png);
+		-ms-mask-size: 100% 100%;
+		mask-image: url(../images/polygon-megogo.png);
+		mask-size: 100% 100%;
+		overflow: hidden;
+	}
+	&.bycard {
+		background: $blue2;
+	}
+	&.silver {
+		background: $blue3;
+	}
+
+	&-title {
+		margin-bottom: 15px;
+	}
+	&-logo {
+		height: 55px;
+		display: -ms-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		-ms-justify-content: center;
+		justify-content: center;
+
+		img {
+			max-height: 55px;
+		}
+	}
+	&:hover {
+		// -webkit-mask-image: none;
+		transform: scale(0.98);
+		background: $dark;
+	}
+}
+
+.screen-col {
+	//min-height: calc(100vh - 140px);
+}
+.screen-content {
+	min-height: calc(100vh - 140px);
+	padding: 180px 80px 60px;
+	font-weight: 300;
+	@include fz(26);
+
+
+	&.megogo {
+		@include fz(30);
+		background-color: $blue;
+		background-image: url(../images/megogo.png), url(../images/dots-blue.png);
+		background-position: right 60px bottom 60px, center top;
+		background-repeat: no-repeat, repeat-x;
+
+		.h2, h2 {
+			max-width: 940px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&.silver {
+		padding-top: 90px;
+		padding-bottom: 30px;
+		background-color: $blue3;
+		background-image: url(../images/silver-content-logo.png), url(../images/dots-blue.png), url(../images/silver-mobile.png), url(../images/silver-dots.png);
+		background-position: right 40px bottom 40px, center top, 40px bottom, left bottom;
+		background-repeat: no-repeat, repeat-x, no-repeat, no-repeat;
+		background-size: auto, auto, auto 55%, 70% auto;
+
+		h2, .h2 {
+			max-width: 640px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 15px;
+		}
+		p {
+			margin-bottom: 10px;
+		}
+	}
+	&-btn {
+		margin-top: 40px;
+		
+		.btn {
+			width: 360px;
+		}
+	}
+}
+.screen-inner {
+	margin-left: auto;
+	margin-right: auto;
+
+	h2, .h2, h3, .h3 {
+		margin-bottom: 38px;
+	}
+	p {
+		margin-bottom: 38px;
+	}
+	.link-white {
+		font-weight: 700;
+	}
+}
+.silver-padding {
+	text-align: left;
+	// padding-left: 38%;
+	padding-left: 30%;
+	padding-top: 30px;
+}
+.link-white {
+	color: #FFF;
+
+	&:hover {
+		color: $primary;
+	}
+}
+ol.silver-steps {
+	& > li {
+		margin-bottom: 0;
+	}
+}
+.silver-prizes {
+	width: 580px;
+	max-width: 100%;
+
+	h4,.h4 {
+		padding-left: 62px;
+	}
+}
+.silver-prize {
+	position: relative;
+	padding-left: 62px;
+	margin-bottom: 20px;
+	font-weight: 500;
+
+	&-icon {
+		position: absolute;
+		left: 0;
+		top: -8px;
+	}
+}
+.i-tickets {
+	@include sprite($i-tickets);
+}
+.i-popcorn {
+	@include sprite($i-popcorn);
+}
