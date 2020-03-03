@@ -228,7 +228,7 @@ header.header {
 		}
 	}
 
-	&.megogo {
+	&.megogo{
 		background-position: center bottom 40px, center top;
 		background-size: auto 18px, auto 120px;
 	}
@@ -239,9 +239,31 @@ header.header {
 		background-size: auto 50px , auto 120px, auto 390px;
 		padding-bottom: 480px;
 	}
+	&.bycard {
+		background-position: center bottom 40px, center top;
+		background-size: auto 35px, auto 120px;
+		padding-bottom: 90px;
+	}
+
 }
 .silver-padding {
 	padding-left: 0;
+}
+.label-quiz {
+	height: 58px;
+	line-height: 52px;
+	@include fz(15);
+	font-weight: 700;
+}
+.quiz-progress {
+	margin-bottom: 20px;
+}
+.quiz-res {
+	padding-top: 0;
+
+	&-title {
+		color: $primary;
+	}
 }
 
 }/*992px end*/
@@ -346,6 +368,45 @@ h4, .h4 {
 		width: auto;
 	}
 }
+.quiz-res {
+
+	&-title {
+		@include fz(30)
+	}
+	&-img {
+		img {
+			width: 180px;
+		}
+	}
+	&-hint {
+		br {
+			display: none;
+		}
+	}
+}
+.quiz-form {
+	padding-right: 0;
+
+	input#{&}-input {
+		height: 58px;
+		margin-bottom: 15px;
+		@include fz(15);
+	}
+	button#{&}-btn {
+		position: static;
+		width: 100%;
+		display: block;
+		height: 58px;
+		line-height: 58px;
+		@include fz(15);
+	}
+}
+.quiz-res-btn {
+	.btn {
+		display: block;
+		width: 100%;
+	}
+}
 
 }/*768px end*/
 
@@ -399,7 +460,8 @@ h4, .h4 {
 	display: none;
 }
 
-h2, .h2 {
+h2, .h2,
+.quiz-res-title {
 	@include fz(21);
 }
 .screen-content {
