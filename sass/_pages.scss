@@ -351,6 +351,27 @@ ol.silver-steps {
 			}
 		}
 	}
+	&.right {
+		border-color: #00a200;
+
+		span {
+			color: #FFF !important;
+
+			&:after {
+				background: #00a200 !important;
+			}
+		}
+	}
+	&.wrong {
+		border-color: #c50002;
+		 span {
+			color: #FFF !important;
+
+			&:after {
+				background: #c50002 !important;
+			}
+		}
+	}
 }
 .quiz-res {
 	text-align: center;
@@ -403,4 +424,48 @@ ol.silver-steps {
 		line-height: 84px;
 		font-weight: 700;
 	}
+}
+
+.thanks-popup {
+	position: fixed;
+	z-index: 199;
+	background: rgba(#000,.95);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: -ms-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	padding: 20px;
+	color: $primary;
+	text-align: center;
+	@include fz(30);
+	font-weight: 300;
+
+	&-title {
+		@include fz(44);
+		margin-bottom: 18px;
+		font-weight: 700;
+	}
+	&-txt {
+		margin-bottom: 28px;
+	}
+	a#{&}-btn {
+		height: 80px;
+		line-height: 74px;
+		border: 3px solid $primary;
+		padding: 0px 70px;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}
+html.not-scroll {
+	overflow: hidden;
 }
