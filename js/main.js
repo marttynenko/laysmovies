@@ -17,6 +17,7 @@ var Quiz = {
   },
   //уведомление при успешном прохождении викторины
   win: function(blockToAppend) {
+    $(blockToAppend).html(this.preloader);
     $.ajax({
       type:'GET',
       url: 'win.html',
@@ -27,6 +28,7 @@ var Quiz = {
   },
   //уведомление при не успешном прохождении викторины
   lose: function(blockToAppend) {
+    $(blockToAppend).html(this.preloader);
     $.ajax({
       type:'GET',
       url: 'lose.html',
@@ -59,7 +61,8 @@ var Quiz = {
     //увеличиваем счетчик ответов
     this.counter++;
     $(elCounter).text(this.counter);
-  }
+  },
+  preloader: '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'
 }
 
 var Subscribe = {

@@ -187,7 +187,7 @@
 		padding-top: 90px;
 		padding-bottom: 30px;
 		background-color: $blue2;
-		background-image: url(../images/bycard.png), url(../images/dots-black.png);
+		background-image: url(../images/bycard-big.png), url(../images/dots-black.png);
 		background-position: right 60px bottom 50px, center top;
 		background-repeat: no-repeat, repeat-x;
 
@@ -311,6 +311,7 @@ ol.silver-steps {
 	margin-bottom: 20px;
 	border: 3px solid #FFF;
 	color: #FFF;
+	background: $blue2;
 	height: 86px;
 	line-height: 80px;
 	text-align: center;
@@ -468,4 +469,64 @@ ol.silver-steps {
 }
 html.not-scroll {
 	overflow: hidden;
+}
+input.subscribe-form-input[style*="border: 1px solid red;"] {
+	border: 3px solid red !important;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+	height: 80px;
+	margin: 60px auto;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }

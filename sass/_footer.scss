@@ -10,10 +10,10 @@ footer.footer {
   flex: 0 0 50%;
   max-width: 50%;
   position: relative;
+  padding-right: 250px;
 
   input#{&}-input {
     width: 100%;
-    padding-right: 275px;
     font-weight: 700;
   }
   button#{&}-btn {
@@ -29,7 +29,7 @@ footer.footer {
     padding: 0px 20px;
     background: $yellow;
     color: #000;
-    min-width: 250px;
+    width: 250px;
     cursor: pointer;
     transition: background .3s;
 
