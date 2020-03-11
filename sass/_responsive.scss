@@ -88,7 +88,7 @@ header.header {
 }/*1600px end*/
 
 
-@media (max-width : 1400px) {
+@media (max-width : 1420px) {
 
 .silver-padding {
 	padding-left: 38%;
@@ -96,8 +96,18 @@ header.header {
 .screen-content.silver {
 	background-size: auto, auto, 30% auto, 70% auto;
 }
+
 	
-}/*1400px end*/
+}/*1420px end*/
+
+
+@media (max-width : 1420px) and (min-width: 993px) {
+
+.screen-content {
+	padding-bottom: 140px !important;
+}
+
+}/*1420px - 993px end*/
 
 
 @media (max-width : 1280px) {
@@ -218,7 +228,7 @@ header.header {
 .screen-content {
 	min-height: 0;
 	padding-top: 55px !important;
-	padding-bottom: 90px;
+	padding-bottom: 100px;
 
 	.h2, h2 {
 		margin-bottom: 25px !important;
@@ -230,18 +240,19 @@ header.header {
 
 	&.megogo{
 		background-position: center bottom 40px, center top;
-		background-size: auto 18px, auto 120px;
+		background-size: auto 24px, auto 120px;
+		padding-bottom: 100px;
 	}
 	&.silver {
 		background-image: url(../images/silver-content-logo.png), url(../images/dots-blue.png), url(../images/m-silver-mobile.png);
 		background-position: center bottom 420px, center top, center bottom;
 		background-repeat: no-repeat, repeat-x, no-repeat;
-		background-size: auto 50px , auto 120px, auto 390px;
-		padding-bottom: 480px;
+		background-size: auto 75px , auto 120px, auto 390px;
+		padding-bottom: 510px;
 	}
 	&.bycard {
 		background-position: center bottom 40px, center top;
-		background-size: auto 45px, auto 120px;
+		background-size: auto 53px, auto 120px;
 		padding-bottom: 100px;
 	}
 
@@ -250,8 +261,7 @@ header.header {
 	padding-left: 0;
 }
 .label-quiz {
-	height: 58px;
-	line-height: 52px;
+	padding: 18px 15px;
 	@include fz(15);
 	font-weight: 700;
 }
@@ -264,6 +274,9 @@ header.header {
 	&-title {
 		color: $primary;
 	}
+}
+.silver-prizes {
+	padding-right: 0;
 }
 
 }/*992px end*/

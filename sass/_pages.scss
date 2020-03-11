@@ -310,10 +310,12 @@ ol.silver-steps {
 	display: block;
 	margin-bottom: 20px;
 	border: 3px solid #FFF;
+	padding: 25px 15px;
+	line-height: 1.25;
 	color: #FFF;
 	background: $blue2;
-	height: 86px;
-	line-height: 80px;
+	// height: 86px;
+	// line-height: 80px;
 	text-align: center;
 	cursor: pointer;
 	z-index: 1;
