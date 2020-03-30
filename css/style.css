@@ -900,3 +900,43 @@ RESPONSIVE STYLES ----------------------- */
 /*380px end*/
 /*370px end*/
 /*350px*/
+.social-auth-wrapper { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-justify-content: center; justify-content: center; padding-top: 160px !important; }
+
+.social-auth { max-width: 790px; margin-left: auto; margin-right: auto; font-size: 44px; text-align: center; }
+
+.social-auth-appeal { margin-bottom: 45px; font-weight: 700; }
+
+.social-auth-links { font-size: 0; }
+
+.social-auth-links a { display: inline-block; vertical-align: middle; margin: 0px 1vw 1vw; }
+
+.social-auth-links a:hover { opacity: 0.75; transform: scale(0.95); }
+
+.log-out-link { display: inline-block; }
+
+.log-out-img { display: inline-block; vertical-align: middle; margin-right: 8px; border-radius: 50%; position: relative; overflow: hidden; border: 2px solid #ffe53e; width: 64px; height: 64px; }
+
+.log-out-img img { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; object-fit: cover; }
+
+.log-out-txt { text-decoration: underline; text-decoration-color: rgba(255, 229, 62, 0.5); }
+
+.log-out:hover .log-out-txt { text-decoration: none; }
+
+@media (min-width: 993px) { .log-out { -ms-flex: 1 0 auto; flex: 1 0 auto; padding-right: 260px; text-align: right; }
+  .log-out-link { border-radius: 42px; background: rgba(255, 255, 255, 0.85); padding: 5px 20px 5px 5px; color: #000; }
+  .log-out-link:hover { color: #ffe53e; background: #FFF; }
+  .log-out-txt { text-decoration: none; } }
+
+@media (max-width: 992px) { .wrapper { display: -webkit-box; display: -webkit-flex; display: -webkit-inline-box; display: -webkit-inline-flex; display: inline-flex; display: -ms-flex; display: -ms-inline-flexbox; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-left: auto; margin-right: auto; overflow: hidden; min-height: 100%; }
+  .middle { -webkit-flex: 1 0 auto; -moz-flex: 1 0 auto; -o-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto; }
+  footer.footer { -webkit-flex: 0 0 auto; -moz-flex: 0 0 auto; -o-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .screen-content { min-height: 80vh !important; }
+  .social-auth-wrapper { padding-top: 55px !important; } }
+
+@media (max-width: 768px) { .social-auth-appeal { font-size: 30px; }
+  .social-auth-links a { width: 38px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px; } }
+
+@media (max-width: 480px) { .social-auth { margin-bottom: 20px; }
+  .social-auth-appeal { font-size: 21px; }
+  .log-out { font-size: 17px; }
+  .log-out-img { width: 48px; height: 48px; } }

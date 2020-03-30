@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Lay's Movies</title>
+  <meta name="keywords" content="McFans" />
+  <meta name="description" content="Кино вкуснее с Lay's" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta property="og:title" content="Lay's Movies"/>
+  <meta property="og:description" content="Кино вкуснее с Lay's"/>
+  <meta property="og:image" content=""/>
+  <meta itemprop="name" content="Lay's Movies"/>
+  <meta itemprop="description" content="Кино вкуснее с Lay's"/>
+  <meta itemprop="image" content=""/>
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <style>
+    @font-face {
+      font-family: 'GothamPro';
+      src: local('GothamPro'), local('Gotham Pro'),
+        url('fonts/Gotham/GothaProReg.otf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: fallback;
+    }
+    @font-face {
+      font-family: 'GothamPro';
+      src: local('GothamPro Bold'), local('Gotham Pro Bold'),
+        url('fonts/Gotham/GothaProBol.otf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: fallback;
+    }
+    @font-face {
+      font-family: 'GothamPro';
+      src: local('GothamPro Light'), local('Gotham Pro Light'),
+        url('fonts/Gotham/GothaProLig.otf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: fallback;
+    }
+    @font-face {
+      font-family: 'GothamPro';
+      src: local('GothamPro Italic'), local('Gotham Pro Italic'),
+        url('fonts/Gotham/GothaProIta.otf') format('truetype');
+      font-weight: 400;
+      font-style: italic;
+      font-display: fallback;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+<body>
+<div id="app" class="wrapper">
+<header class="header" id="header">
+  <div class="inner">
+    <div class="flex align-justify valign-center">
+      <div class="logo header-logo"><a href="/"><img src="images/logo.png" alt="Lay's Movies"></a></div>
+
+      <div class="log-out">
+        <a href="#" class="log-out-link">
+          <div class="log-out-img"><img src="images/auth/user.png" alt="user"></div>
+          <span class="log-out-txt">Выйти</span>
+        </a>
+      </div>
+
+      <a href="#" class="header-home"></a>
+    </div>
+  </div>
+</header>
+
+<div id="middle" class="middle">
+
+  <div class="layout flex">
+    <main class="layout-main screen-col">
+      <div class="screen-content bycard social-auth-wrapper">
+        
+        <div class="social-auth">
+          <div class="social-auth-appeal">Чтобы получить промокод, пожалуйста, авторизуйтесь через одну из социальных сетей:</div>
+          <div class="social-auth-links">
+            <a href="#"><img src="images/auth/auth-fb.png" alt="icon" loading="lazy"></a>
+            <a href="#"><img src="images/auth/auth-vk.png" alt="icon" loading="lazy"></a>
+            <a href="#"><img src="images/auth/auth-tw.png" alt="icon" loading="lazy"></a>
+            <a href="#"><img src="images/auth/auth-ok.png" alt="icon" loading="lazy"></a>
+            <a href="#"><img src="images/auth/auth-mir.png" alt="icon" loading="lazy"></a>
+          </div>
+        </div><!--.social-auth-->
+
+      </div>
+    </main>
+    <aside class="layout-aside screen-col">
+      <div class="aside-img"><img src="images/right-col-img.png" alt="Кино вкуснее с лейс" loading="lazy"></div>
+    </aside>
+  </div>
+
+</div><!-- #middle -->
+
+
+<footer class="footer" id="footer">
+  <div class="inner">
+    <div class="footer-flex flex valign-center align-justify">
+      
+      <div class="subscribe-form">
+        <form action="">
+          <input type="text" class="subscribe-form-input" placeholder="E-mail">
+          <button class="subscribe-form-btn">Подписаться!</button>
+        </form>
+      </div>
+      
+      <div class="media-links">
+        <a href="#" rel="nofollow" target="_blank"><i class="i-insta"></i></a>
+        <a href="#" rel="nofollow" target="_blank"><i class="i-fb"></i></a>
+        <a href="#" rel="nofollow" target="_blank"><i class="i-vk"></i></a>
+      </div>
+      
+    </div>
+  </div><!--.inner-->
+</footer>
+</div><!-- #wrapper -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
